@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// Functions
+// -----------------------------------------------------------------------------
+
+// Convertir px a rem
+@function rem($pixels, $context: $font-size-base) {
+  @return ($pixels / $context) * 1rem;
+}
+
+// Calcular espaciado
+@function spacing($multiplier) {
+  @return $spacing-md * $multiplier;
+}

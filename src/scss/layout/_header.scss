@@ -1,0 +1,12 @@
+// -----------------------------------------------------------------------------
+// Importar variables
+@use '../abstracts/variables' as *;
+
+// Header
+// -----------------------------------------------------------------------------
+
+.header-custom {
+  padding: $spacing-md;
+  background: $primary-color;
+  color: white;
+}

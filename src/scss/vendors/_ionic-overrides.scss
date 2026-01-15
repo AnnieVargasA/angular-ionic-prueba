@@ -1,0 +1,16 @@
+// -----------------------------------------------------------------------------
+// Importar variables
+@use '../abstracts/variables' as *;
+
+// Sobrescrituras de Ionic
+// -----------------------------------------------------------------------------
+
+// Aquí puedes sobrescribir estilos de Ionic si es necesario
+ion-content {
+  --background: var(--ion-color-light);
+}
+
+ion-toolbar {
+  --background: var(--ion-color-primary);
+  --color: white;
+}

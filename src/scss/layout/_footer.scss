@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// Importar variables
+@use '../abstracts/variables' as *;
+
+// Footer
+// -----------------------------------------------------------------------------
+
+.footer-custom {
+  padding: $spacing-lg;
+  background: $dark-color;
+  color: white;
+  text-align: center;
+}

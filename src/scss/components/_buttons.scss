@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------------
+// Importar dependencias
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// Botones personalizados
+// -----------------------------------------------------------------------------
+
+.btn-custom {
+  padding: $spacing-sm $spacing-md;
+  border-radius: 8px;
+  font-weight: $font-weight-bold;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    @include box-shadow(2);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// Importar variables
+@use '../abstracts/variables' as *;
+
+// Tema por defecto
+// -----------------------------------------------------------------------------
+
+:root {
+  --primary: #{$primary-color};
+  --secondary: #{$secondary-color};
+  --success: #{$success-color};
+  --danger: #{$danger-color};
+}

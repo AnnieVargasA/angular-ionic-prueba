@@ -1,0 +1,39 @@
+// MAIN SCSS FILE - Arquitectura 7-1
+// Este archivo importa todos los parciales en el orden correcto
+// Basado en la metodología 7-1 Pattern de SASS
+
+// ? 1. ABSTRACTS
+// Herramientas, helpers, variables, funciones, mixins
+// No genera CSS directamente
+@use 'abstracts/variables' as *;
+@use 'abstracts/functions' as *;
+@use 'abstracts/mixins' as *;
+
+// * 2. VENDORS
+// Archivos CSS de terceros y librerías externas
+@use 'vendors/ionic-overrides' as *;
+
+// ! 3. BASE
+// Estilos básicos, reset, tipografía
+@use 'base/reset' as *;
+@use 'base/typography' as *;
+@use 'base/helpers' as *;
+@use 'base/global' as *;
+
+// & 4. LAYOUT
+// Estilos de estructura principal (header, footer, navegación, grid)
+@use 'layout/header' as *;
+@use 'layout/footer' as *;
+
+// ~ 5. COMPONENTS
+// Componentes reutilizables (botones, cards, forms)
+@use 'components/buttons' as *;
+@use 'components/cards' as *;
+
+// todo 6. PAGES
+// Estilos específicos para cada página
+@use 'pages/home' as *;
+
+// ^ 7. THEMES
+// Temas y variaciones de color
+@use 'themes/default' as *;

@@ -1,0 +1,43 @@
+// -----------------------------------------------------------------------------
+// Importar variables
+@use '../abstracts/variables' as *;
+
+// Estilos globales personalizados
+// -----------------------------------------------------------------------------
+// Estilos que afectan a toda la aplicación
+
+// Ejemplo: Comportamiento de scroll suave
+html {
+  scroll-behavior: smooth;
+}
+
+// Ejemplo: Ocultar scrollbar en webkit
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+// Selección de texto
+::selection {
+  background: $primary-color;
+  color: white;
+}
+
+// Foco accesible
+:focus-visible {
+  outline: 2px solid $primary-color;
+  outline-offset: 2px;
+}

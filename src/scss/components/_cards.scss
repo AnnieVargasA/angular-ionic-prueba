@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// Importar dependencias
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// Cards personalizadas
+// -----------------------------------------------------------------------------
+
+.card-custom {
+  padding: $spacing-lg;
+  border-radius: 12px;
+  background: white;
+  @include box-shadow(1);
+  transition: all 0.3s ease;
+
+  &:hover {
+    @include box-shadow(2);
+  }
+}
